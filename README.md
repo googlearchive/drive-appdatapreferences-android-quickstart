@@ -4,17 +4,18 @@ AppdataPreferences is a tiny sample Android application that demonstrates the fe
 
 ## Setup
 * Clone AppdataPreferences for Android SDK and import it into Eclipse as an Android Application project from existing source code.
-
-      git clone https://github.com/googledrive/appdatapreferences-android
+~~~~
+git clone https://github.com/googledrive/appdatapreferences-android
+~~~~
 
 * Clone AppdataPreferences Bootstrap and import in into the Eclipse, similar to the library.
-
-      git clone https://github.com/googledrive/appdatapreferences-android-bootstrap
-      
+~~~~
+git clone https://github.com/googledrive/appdatapreferences-android-bootstrap
+~~~~      
 * Go to [APIs console](https://code.google.com/apis/console) and create a project if you haven't already. On the "API Access" tab, create a new client ID for installed apps and select Android. Provide your package name and certificate finger print. You can extract SHA1 footprint by executing the following command:
-
-      $ keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore -list -v
-
+~~~~
+$ keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore -list -v
+~~~~
 That's it. Launch the application on your device, give the permissions it's asking. For more fun, launch the sample application on another device and see how changes on a single device is being synced with the other.
 
 ## License
